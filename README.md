@@ -2,6 +2,8 @@
 
 Style Guide: 
 
+====================================================================================================================== 
+
 Fonte: Raleway, 
 
  
@@ -55,23 +57,21 @@ Cores do site
 
  
 
-Editar os componentes bootstrap no arquivo.css, localizado na pasta css. 
+Editar os componentes bootstrap no elemento desejado. In line.
 
- 
-
- 
+======================================================================================================================  
 
 Componentes do bootstrap:  
 
-Live Demo, para compartilhar o link da sala 
+Live Demo, --modal para dar minimizar o número de telas.
 
-Button, auto explicativo 
+Button,
 
-Dropdown button, para excluir e compartilhar 
-
- 
+Dropdown button, --para botões que levam para outros botões.
 
  
+
+====================================================================================================================== 
 
 Arquitetura do projeto 
 
@@ -83,17 +83,22 @@ Boreal
 
   --css 
 
-    ---styles.css 
+    ---styles
 
-    --img 
+  --img 
 
     ---imgs 
 
+  --js
+    ---scripts
+
 -backend 
-
- --app 
-
- --- 
+--app
+---controllers
+---middlewares
+---models
+---routes
+---configs
 
 -frontend 
 
@@ -101,59 +106,60 @@ Boreal
 
 -database 
 
-  --BD.sql 
+  --BD.sql (backup do banco)
 
  
 
- 
+====================================================================================================================== 
 
 Bibliotecas : 
 
 OBS: os integrantes estão familiarizados com as tecnologias apresentadas. 
 
  
-
 Bootstrap, conferir se está na versão 5.3.2. 
-
 Instalação: npm install bootstrap; 
-
 Para ajudar na estilização do site 
 
  
 
 mysql, conferir se está na versão 2.18.1. 
-
 Instalação: npm install mysql; 
-
 Para poder interagir com o banco de dados,  
 
  
 
 express, conferir se está na versão 4.18.2. 
-
 Instalação: npm install express; 
-
 Para facilitar as criações de API´s 
 
- 
 
 Body-parser, conferir se está na versão 1.20.2. 
-
 Instalação: npm install body-parser; 
-
 Parser para requisições content-type 
 
  
 
-fontawesome, conferir se está na 6.5.1. 
-
+fontawesome, conferir se está na versão 6.5.1. 
 Instalação: npm i --save @fortawesome/fontawesome-svg-core 
-
 Acessar o site para ver a documentação.  
+É necessário para obtermos icones. Como o: Gear, Bars, Xmark, paper-plane, copy, circle-plus, paper-clip, people-group.
 
-É necessário para obtermos icones. Que são: Gear, Bars, Xmark, paper-plane, copy, circle-plus, paper-clip, people-group,  
 
- 
+
+ESLint, conferir se está na 8.57.0.
+Instalação: npm install eslint
+Acessar a documentação.
+É necessário porque é o Analisador estático de código. 
+
+
+
+Prettier, baixar a extensão no VScode.
+Estamos usando com as configurações padrão.
+É necessário para deixar o código mais legível e limpo.
+
+
+====================================================================================================================== 
 
 Browsers supported:  
 
@@ -163,3 +169,11 @@ Firefox ESR
 iOS >= 12 
 Safari >= 12 
 not Explorer <= 11 
+
+====================================================================================================================== 
+
+COLABORADORES: 
+
+Ana - https://github.com/AnaHintz
+Kevyn - https://github.com/KevynLuiz
+Eduardo - https://github.com/EduardoCostadaSilva
